@@ -6,8 +6,6 @@ import sys
 import math
 import itertools
 
-#saveFile = open("/home/chip/Desktop/primeNumbers.txt", "w")#Open text file in write mode
-
 potentialPrime = 325123621
 primeFound = False #Tell us if a prime has been found
 
@@ -20,11 +18,11 @@ def primalityTest(potentialPrime):
             primeFound = True
 
     if(primeFound):
-        print(potentialPrime)#Testing
+        print(potentialPrime) #For testing purposes
         #with open("/home/chip/Desktop/primeNumbers.txt", "w") as saveFile:
         with open("primeNumbers.txt", "w") as saveFile:
-            saveFile.write(str(potentialPrime))#Write prime to file
+            saveFile.write(str(potentialPrime)) #Write prime to file
             saveFile.close()
 
-for potentialPrime in itertools.count(potentialPrime): #Check all numbers >5
+for potentialPrime in itertools.count(potentialPrime): #Recursive call to primalityTest
     primalityTest(potentialPrime)

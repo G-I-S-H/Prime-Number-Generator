@@ -1,5 +1,5 @@
 #Author: Dustin Grady
-#Purpose: To find large prime numbers, and stuff
+#Purpose: To find large prime numbers
 #Status: Working/ Tested
 
 import sys

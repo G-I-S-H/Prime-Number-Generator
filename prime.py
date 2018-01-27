@@ -6,7 +6,7 @@ import sys
 import math
 import itertools
 
-potentialPrime = 325123621
+potentialPrime = 0
 primeFound = False #Tell us if a prime has been found
 
 def primalityTest(potentialPrime):
